@@ -33,7 +33,7 @@ export const Contact = () => {
       />
       <input
         type="email"
-        placeholder="Ingresá tu email"
+        placeholder="Ingresá tu gmail"
         className="w-full border p-2"
         value={form.email}
         onChange={(e) => setForm({ ...form, email: e.target.value })}
