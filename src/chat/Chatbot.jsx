@@ -25,7 +25,7 @@ export const Chatbot = () => {
   setInput("");
 
   try {
-    const response = await axios.post("http://localhost:3001/chat", {
+    const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/chat`, {
       message: input,
     });
 
