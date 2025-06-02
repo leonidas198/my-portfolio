@@ -12,8 +12,7 @@ export const Home = () => {
         />
         <h1 className="text-4xl font-bold mb-4">¡Hola! Soy Leónidas Enrique Chávez</h1>
         <p className="text-lg leading-relaxed">
-          Estudiante de Analista de Sistemas con pasión por la programación y el diseño web.
-          Me encanta trabajar con tecnologías modernas como React, JavaScript, Node, bases de datos y más.
+          Estudiante de la carrera "Analista de Sistemas" (Inst. Superior Santo Domingo). Actualmente dedicado al desarrollo de aplicaciones web con enfoque en Backend, SEO y experiencia como diseñador web (Figma, Netlify, Framer y Adobe xD).
         </p>
       </div>
     </section>

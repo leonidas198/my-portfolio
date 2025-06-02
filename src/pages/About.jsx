@@ -8,7 +8,7 @@ export const About = () => {
         
         <h1 className="text-4xl font-bold mb-4">Sobre mí:</h1>
         <p className="text-lg leading-relaxed">
-          "Creo en el código limpio, escalable y bien estructurado. Disfruto enfrentar desafíos técnicos y aprender nuevas tecnologías que me ayuden a mejorar.
+          "Creo en el código limpio, escalable y bien estructurado. 
           Desde el inicio de mi carrera como estudiante de analisis de sistemas, he adquirido grandes conocimientos, tanto en programación como en la gestión de proyectos a nivel organizacional. Me gusta trabajar en equipo, confío en seguir aprendiendo y crecer profesionalmente."
         </p>
       </div>
