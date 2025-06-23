@@ -7,6 +7,9 @@ export const Footer = () => {
         <p>&copy; {new Date().getFullYear()} Mi Portfolio. Todos los derechos reservados.</p>
 
         <div className="flex space-x-4">
+          <a href="https://wa.me/5492995873256?text=Hola%2C%20quiero%20más%20información" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+            WhatsApp
+          </a>
           <a href="https://github.com/leonidas198" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
             GitHub
           </a>
