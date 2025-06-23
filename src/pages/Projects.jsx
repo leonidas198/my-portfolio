@@ -3,6 +3,14 @@ import { FaGithub, FaExternalLinkAlt, FaTimes } from "react-icons/fa";
 
 const projects = [
   {
+    title: "Travel App",
+    video: "/projects/travel-app.mp4",
+    description: "Pagina posicionada para ver destinos de lugares a los cuales viajar, con un formulario de contacto, en idioma español e inglés.",
+    tech: ["React", "Typescript"],
+    github: "https://github.com/leonidas198/travel-app",
+    demo: "https://www.mejoresdestinos.com.ar/",
+  },
+  {
     title: "Gestoria",
     video: "/projects/Gestoria.mp4",
     description: "App para recibir consultas, con un formulario con backend y un botón flotante para whatsapp.",
