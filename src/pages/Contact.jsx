@@ -1,7 +1,7 @@
 
-
+import emailjs from "emailjs-com";
 import { useState } from "react";
-import axios from "axios";
+
 
 export const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -11,14 +11,24 @@ export const Contact = () => {
     e.preventDefault();
     setStatus("Enviando...");
 
-    try {
-      await axios.post(`${import.meta.env.VITE_BACKEND_URL}/contact`, form);
-      setStatus("Mensaje enviado correctamente ✅");
-      setForm({ name: "", email: "", message: "" });
-    } catch (error) {
-      console.error(error);
-      setStatus("Hubo un error al enviar el mensaje ❌");
-    }
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        name: form.name,
+        email: form.email,
+        message: form.message,
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+      .then(() => {
+        setStatus("Mensaje enviado correctamente ✅");
+        setForm({ name: "", email: "", message: "" });
+      })
+      .catch((error) => {
+        console.error(error);
+        setStatus("Hubo un error al enviar el mensaje ❌");
+      });
   };
 
   return (
